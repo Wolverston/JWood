@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WOOD</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+
+	<script src="jquery.js"></script>
+	<script src="bootstrap.min.js"></script>
+        <script>
+            $.scrollify({
+		section : "section",
+		sectionName : "section-name",
+		interstitialSection : "",
+		easing: "easeOutExpo",
+		scrollSpeed: 1100,
+		offset : 0,
+		scrollbars: true,
+		standardScrollElements: "",
+		setHeights: true,
+		overflowScroll: true,
+		before:function() {},
+		after:function() {},
+		afterResize:function() {},
+		afterRender:function() {}
+	});
+				$(function() {
+					$.scrollify({
+						section : ".section",
+					});
+				});
+			</script>
+</head>
+<body>
+
+	<section class="section home">
+            <div class="container-fluid">
+    <nav class="navigation" role="navigation">
+            <ul class="list-unstyled list-inline">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT ME</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+            </ul>	
+    </nav>
+</div>
+		<div class="tm"><img src="i/Logo.png" alt=""></div>
+		<div class="tm"><span>TM</span></div>
+		<div class="jwood"><span>JWOOD</span><span class="photo">PHOTOGRAPHY</span>
+		</div>
+		<div class="scroll"><span>Scroll down to see more</span><img src="i/Double Arrow.png" alt=""></div>
+	</section>
+
+	<section class="section about-me">
+            <div class="container-fluid">
+    <nav class="navigation" role="navigation">
+            <ul class="list-unstyled list-inline">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT ME</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+            </ul>	
+    </nav>
+</div>
+		<div class="content Jason"><img src="i/Jason Wood.png" alt=""></div>
+                <div class="content text">
+                    <h2>ABOUT ME</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptare velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    <p class="sign">Jason Wood</p>
+                </div>
+		
+		<div class="scroll"><span>Keep scrolling. There is still more to come.</span><img src="i/Double Arrow.png" alt=""></div>
+	</section>
+	<section class="section portfolio">
+            <nav class="navigation" role="navigation">
+            <ul class="list-unstyled list-inline">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT ME</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+            </ul>	
+    </nav>
+            <div class="text">
+                    <h2>PORTFOLIO</h2>
+                    <div class="img">
+                        <img src="i/01.png" alt="">
+                        <img src="i/02.png" alt="">
+                        <img src="i/03.png" alt="">
+                        <img src="i/04.png" alt="">
+                        <img src="i/05.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="i/06.png" alt="">
+                        <img src="i/07.png" alt="">
+                        <img src="i/08.png" alt="">
+                        <img src="i/09.png" alt="">
+                        <img src="i/10.png" alt="">
+                    </div>
+            </div>
+            <div class="scroll"><span>DO YOU WANT TO SEE IT WITH YOUR OWN EYES? SCROLL!</span><img src="i/Double Arrow.png" alt=""></div>
+	</section>
+	<section class="section contact">
+            <nav class="navigation" role="navigation">
+            <ul class="list-unstyled list-inline">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT ME</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+            </ul>	
+    </nav>
+            <div class="mail">MAIL:</div>
+                <div class="content">JASON@WOOD.COM</div>
+            
+            <div class="tel">PHONE:</div>
+                <div class="content">+44 212 432 444</div>
+            
+            <div class="media">SOCIAL MEDIA:</div>
+                <div class="content">
+                    <img src="i/Facebook.png" alt="">
+                    <img src="i/Twitter.png" alt="">
+                    <img src="i/Instagram.png" alt="">
+                </div>
+	</section>
+    <footer>
+        DESIGNED BY PAWEL SZYMANKIEWICZ, IMPLEMENTED BY KONSTANTIN VALESHKOVSKY
+    </footer>
+</body>
+</html>
