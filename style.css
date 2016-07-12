@@ -33,22 +33,38 @@ body{
     border-bottom: 1px solid white;
     z-index: 10;
 }
-.navigation li a {
+.navigation a {
     font-family: 'nexa_light';
     color: white;
     font-size: 1.7em;
-    line-height: 105px;
+    line-height: 101px;
     margin: 18px;
     letter-spacing: 0.5pt;
 }
-.navigation a:hover {
+.navigation .active {
     text-decoration:none;
     color:lightgray;
+    background-color: #BEBEBE;
+    opacity: 0.7;
 }
-.navigation a:active {
+.about-me .navigation, .contact .navigation {
+    border-bottom: 1px solid black;
+}
+.about-me .navigation a, .contact .navigation a {
+    color: black;
+}
+.navigation a:hover, .about-me .navigation a:hover, .contact .navigation a:hover {
+    color: gray;
     text-decoration:none;
-    color:lightgray;
 }
+.navigation li:hover{
+    background-color: lightgray;
+    opacity: 0.3;
+}
+.scale {
+    transition: 1s;
+}
+
 
 .home {
     position: relative;
@@ -100,12 +116,6 @@ body{
     margin-top: 18px;
 }
 
-.about-me .navigation, .contact .navigation {
-    border-bottom: 1px solid black;
-}
-.about-me .navigation li a, .contact .navigation li a {
-    color: black;
-}
 
 .about-me, .portfolio {
     height:900px;  
@@ -204,6 +214,7 @@ h2 {
 
 .contact {
     height:770px;
+    text-align: center;
 }
 
 .contact .navigation{
@@ -241,11 +252,17 @@ h2 {
 }
 
 footer {
-position: relative;
-    height:101px;    
-    font-size:18px;
-    line-height: 101px;
-    margin:0 50px;
+    position: absolute;
+    display: table;
+    width:100%;
+    bottom:0;
+    margin: 0 50px;
     border-top: 1px solid black;
     z-index: 1;    
+}
+
+footer span {
+    display: table-cell;
+    font-size:18px;
+    line-height: 101px;
 }
